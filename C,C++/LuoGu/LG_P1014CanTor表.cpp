@@ -5,16 +5,19 @@ using namespace std;
 
 int n; 
 
-int* fun(int x){
-	int a[2];
-	return a;
-}
-
 int main(){
 	cin >> n;
-	int* ans = fun(n);
-	cout << ans[0] << "/" << ans[1];
+	int i=0,j=0;
+	while(n>j){
+		i+=1;
+		j+=i;
+	}
 	
+	if(i % 2 == 0){
+		cout << i+n-j << "/" << j-n+1;
+	}else{
+		cout << j-n+1 << "/" << i+n-j;
+	}
 	return 0;
 }
 
