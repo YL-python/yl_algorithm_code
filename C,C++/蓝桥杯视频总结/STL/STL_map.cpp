@@ -28,8 +28,8 @@ int main(){
 	
 	// 遍历用 迭代器
 	for(map<string,int>::iterator i=dict.begin(); i != dict.end(); i++){
-		cout << i->first << "->" << i->second << endl;
-	} 
+		cout << (*i).first << "->" << i->second << endl;
+	}
 	
 	// clear()  清空，会清空内存 
 	
